@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  api:
+    image: api:latest
+    build: ./api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/home/api
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 10000M
+        reservations:
+          cpus: '4'
+          memory: 8000M
