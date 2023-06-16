@@ -1,19 +1,22 @@
-# Requirements
+# Question Answer API
+This project was developed for study purposes. It uses a publicly available model from https://huggingface.co to answer questions given a context.
+
+## Requirements
 * Docker
 * Docker Compose
 
-# Build
+## Build
 ```sh
 docker compose build . 
 ```
 
-# Accessing API
+## Accessing API
 After the **build** step you can use the command `docker compose up` to start the application and visit 
 the api exposed at port 8000.
 
 You can use `/docs` endpoint as the playground.
 
-# Demo Questions
+## Demo Questions
 ```json
 [
   {
